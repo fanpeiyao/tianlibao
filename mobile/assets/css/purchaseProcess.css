@@ -1,0 +1,25 @@
+.purchaseProcess .inputBox {
+    padding: 25px 0;
+    font-size: 40px;
+    justify-content: end;
+    align-items: center;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.purchaseProcess .inputBox>input {
+    height: 30px;
+    width: 80%;
+    border: 0;
+    font-size: 20px;
+    outline: none;
+}
+
+.purchaseProcess .d-flex.tips {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchaseProcess .warningTips {
+    height: 150px;
+}
+

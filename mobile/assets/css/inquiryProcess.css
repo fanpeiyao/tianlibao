@@ -1,0 +1,283 @@
+.inquiryProcess {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    background: #f5f5f5;
+    align-items: center;
+}
+
+.inquiryProcess>.inner {
+    background: #f5f5f5;
+    width: 100%;
+    height: 100vh;
+}
+
+.inquiryProcess>.inner>header h1.title {
+    color: #999;
+    font-size: 12px;
+}
+
+.inquiryProcess>.inner>header {
+    margin-bottom: 12px;
+}
+
+.inquiryProcess>.inner>header>h1~h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.inquiryProcess>.inner>header .container {
+    margin-top: 30px;
+    padding-bottom: 25px;
+}
+
+.inquiryProcess>.inner>header .container>.row p.mb_10 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inquiryProcess>button {
+    padding: .7rem 1rem;
+}
+
+.inquiryProcess .tips {
+    color: #999;
+    font-size: 12px;
+}
+
+.inquiryProcess .tlb_modal .modal-body {
+    padding-top: 1rem;
+}
+
+
+/* 图表 */
+
+.inquiryProcess>.inner>header .container>.row p.mb_10 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.inquiryProcess #myTabContent>div {
+    min-height: 180px;
+    max-height: 180px;
+}
+
+.inquiryProcess #myTabContent>div .echarts {
+    min-height: 165px;
+    max-height: 165px;
+}
+
+.inquiryProcess #myTab.nav-tabs>li {
+    width: 33.33%;
+    text-align: center;
+}
+
+.inquiryProcess #myTab.nav-tabs>li:nth-child(2)>.nav-link {
+    border-color: #e6e6e6 #e6e6e6 #fff;
+}
+
+.inquiryProcess>.inner .nav-tabs .nav-link:focus,
+.inquiryProcess>.inner .nav-tabs .nav-link:hover {
+    border-color: #e6e6e6 #fff #fff;
+}
+
+.inquiryProcess>.inner .nav-tabs .nav-item.show .nav-link,
+.inquiryProcess>.inner .nav-tabs .nav-link.active {
+    color: #333;
+    font-size: 12px;
+    height: 32px;
+    background-color: #fff !important;
+    border-color: #fff !important;
+}
+
+.inquiryProcess>.inner .nav-tabs>li:nth-child(2)>.nav-link.active {
+    border-color: #fff #e6e6e6 #fff !important;
+}
+
+.inquiryProcess>.inner .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.inquiryProcess>.inner .nav-tabs .nav-link {
+    color: #999;
+    background-color: #fbfbfb;
+    border-color: #e6e6e6 #fff #fff;
+    border-radius: 0;
+}
+
+/* 温馨提示 */
+
+.inquiryProcess>.inner footer {
+    margin-top: 12px;
+    padding: 12px;
+    margin-bottom: 35px;
+}
+
+.inquiryProcess>.inner footer>div {
+    margin-bottom: 20px;
+}
+
+.inquiryProcess>.inner footer>div>h1 {
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.inquiryProcess>.inner footer>div>p {
+    font-size: 11px;
+    color: #999;
+    line-height: 18px;
+}
+
+/* 购买后 */
+
+.inquiryProcessSuccess>.inner footer {
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.inquiryProcessSuccess>.inner footer>div {
+    padding: 20px 12px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f7f7f7;
+    color: #999;
+}
+
+.inquiryProcessSuccess>.inner footer>div:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.inquiryProcessSuccess>.inner footer>div.container .col {
+    margin-bottom: 20px;
+    font-size: 11px;
+}
+
+.inquiryProcessSuccess>.inner footer>div>h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* 签约确认中开始 */
+
+.contractConfirmation section .container.pb_15 {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.contractConfirmation .process {
+    height: 88px;
+}
+
+.process .timeline {
+    position: relative;
+    height: 2px;
+    display: flex;
+    justify-content: space-between;
+    top: 42px;
+    margin: 0 12px;
+}
+
+.process .timeline li {
+    padding: 0 12px;
+    position: relative;
+    width: 33.33%;
+}
+
+.process .timeline li:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border: 2px solid;
+    border-radius: 50%;
+}
+
+.process .timeline li:first-child:before {
+    left: 20px;
+}
+
+.process .timeline li:nth-child(2):before {
+    left: 52px;
+}
+
+.process .timeline li:last-child:before {
+    right: 20px;
+}
+
+.process .timeline li>p {
+    position: absolute;
+    top: -25px;
+}
+
+.process .timeline li>span {
+    position: absolute;
+    top: 10px;
+    color: #999;
+}
+
+.process .timeline li:nth-child(2)>span {
+    left: 44px;
+}
+
+.process .timeline li:nth-child(2)>p {
+    left: 30px;
+}
+
+.process .timeline li:last-child>span {
+    right: 10px;
+}
+
+.process .timeline li:last-child>p {
+    right: 0;
+}
+
+/* 理财明细 */
+
+.financialDetails section .container {
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.financialDetails section .container .col:first-child {
+    border-right: 1px solid #f7f7f7;
+}
+
+.financialDetails .signDetail_box>h1 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 0 5px 12px;
+}
+
+.financialDetails .signDetail_box>ul .signDetail_title {
+    padding: 20px 12px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.financialDetails .signDetail_box>ul .container {
+    padding: 12px;
+    color: #666;
+}
+
+.financialDetails .signDetail_box>ul li {
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.financialDetails .signDetail_box>ul li:last-child {
+    margin-bottom: 0
+}
+
+.financialDetails .signDetail_box>ul .container .col {
+    margin-bottom: 12px;
+}
+
+.financialDetails .signDetail_box>ul .container .col:last-child {
+    margin-bottom: 0;
+}

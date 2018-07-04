@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>赎回操作</title>
+    <link href="http://resource.gongyinju.com/resource/CDN/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/purchaseProcess.css">
+    <link rel="stylesheet" href="assets/css/blue.css">
+</head>
+
+<body>
+    <div class="purchaseProcess">
+        <p class="c_title">添利宝货币A（0001）</p>
+        <div class="c_formBox bg-white font_15">
+            <div class="form-group row">
+                <label for="accountName" class="col-3 col-form-label font_15">付款卡</label>
+                <div class="col-9 line_32 skin-padding text-right">
+                    <i class="iconfont icon-gongshang1"></i>
+                    <span id="accountNumber ">6214 **** **** 2819</span>
+                </div>
+            </div>
+
+            <div class="form-group row  font-weight-bold">
+                <label for="accountNumber" class="col-3 col-form-label font_15">可用余额</label>
+                <div class="col-9 skin-padding text-right line_32">
+                    <span class='skin-orange  '>待查询</span>
+                </div>
+            </div>
+        </div>
+        <!-- 买入金额 -->
+        <div class="skin-padding pt_20 bg-white mt_12 ">
+            <h1 class="font_15 font-weight-bold">买入金额</h1>
+            <div class="inputBox d-flex">
+                <i>￥</i>
+                <input type="text" placeholder="50,000.00元起，递增1.00元">
+            </div>
+            <div class="d-flex tips font_12">
+                <h1 class="font-weight-bold pt_20 pb_20">现在预约，预计6月26日（星期二）成交后不可撤销</h1>
+                <span class="skin-color">交易规则</span>
+            </div>
+        </div>
+
+
+        <p class="c_agree d-flex skin-padding pt_30">
+            <i class="iconfont icon-yuanquan1 mr-1 pt-1 skin-color agreeIcon"></i>
+            <span class='color_999 line_20'>我已阅读
+                <i class="skin-color">《法人理财综合服务协议》</i> ，理解其内容并承担相关 风险，同时知道该产品周末和节假日不推送收益。</span>
+        </p>
+        <div class="skin-padding pt_30">
+            <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back" data-toggle="modal" data-target="#purchaseModal">确定</button>
+        </div>
+
+
+        <!-- 金额超出提示框 -->
+        <div class="warningTips fade" id='purchaseTips'>
+            <div class="bg"></div>
+            <div class="content text-center text-white">
+                <i class="iconfont icon-tishi "></i>
+                <p  class="font_15 mt-3">[买入金额]您的申购金额超过 累计申购上限，请重新输入！</p>
+            </div>
+        </div>
+
+        <!-- 确认购买弹出框 -->
+        <div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content tlb_modal">
+                    <div class="modal-body">
+                        <p class="font_15 color_666">确认购买添利宝货币A
+                            <span>100,000</span>元，交易卡号
+                            <span>6 214**** **** 2819</span>
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn  skin-color skin-border" data-dismiss="modal" aria-label="Close">取消</button>
+                        <button type="button" class="btn skin-back"  id="purchaseBtn">确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="http://resource.gongyinju.com/resource/CDN/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://resource.gongyinju.com/resource/CDN/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="http://resource.gongyinju.com/resource/CDN/popper.js/1.13.0/popper.js"></script>
+    <script src="assets/js/purchaseProcess.js"></script>
+</body>
+
+</html>

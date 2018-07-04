@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>查询流程</title>
+    <link href="http://resource.gongyinju.com/resource/CDN/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/iconfont.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/inquiryProcess.css">
+    <link rel="stylesheet" href="assets/css/blue.css">
+</head>
+
+<body>
+    <div class="inquiryProcess">
+        <!-- 页面内容 -->
+        <div class="inner">
+            <header class=" skin-padding bg-white">
+                <h1 class="text-center title pt_30">添利宝货币A（0001）</h1>
+                <h3 class="skin-orange">5.49</h3>
+                <h1 class="text-center title pt_10">昨日收益（元）2018-06-20</h1>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb_10 ">53719.23</p>
+                            <p class="tips">总金额（元）</p>
+                        </div>
+                        <div class="col">
+                            <p class="mb_10 skin-orange ">886.21</p>
+                            <p class="tips">累计收益（元）</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 报表 -->
+            <section  class="bg-white pt_15">
+
+                <!-- tab切换框 放图表 -->
+                <div class="tab-content  skin-padding" id="myTabContent">
+                    <div class="tab-pane fade show active" id="week" role="tabpanel" aria-labelledby="week-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">七日年化收益率</div>
+                                <div class="col tips text-right p-0">万份收益：1.2579元</div>
+                            </div>
+                        </div>
+                        <div id="weekChart" class='echarts'></div>
+                    </div>
+                    <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">一月年化收益率</div>
+                                <div class="col tips text-right p-0">万份收益：1.2579元</div>
+                            </div>
+                        </div>
+                        <div id="monthChart"  class='echarts'></div>
+                    </div>
+                    <div class="tab-pane fade" id="threeMonth" role="tabpanel" aria-labelledby="threeMonth-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">三月年化收益率</div>
+                                <div class="col tips text-right p-0">万份收益：1.2579元</div>
+                            </div>
+                        </div>
+                        <div id="threeMonthChart"  class='echarts'></div>
+                    </div>
+                </div>
+                <!-- tab切换按钮-->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="true">近七日</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">近一月</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="threeMonth-tab" data-toggle="tab" href="#threeMonth" role="tab" aria-controls="threeMonth" aria-selected="false">近三月</a>
+                    </li>
+                </ul>
+
+            </section>
+            <!-- 风险评估弹框 -->
+            <div class="modal fade" id="riskAssessment" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content tlb_modal">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title font-weight-bold font_15 margin_auto" id="exampleModalLongTitle">风险评估确认</h5>
+                        </div>
+                        <div class="modal-body color_666 font-weight-bold line_20">
+                             您在工商银行未进行投资风险承受能力评估或 该评估结果已失效，建议重新评估。
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <button type="button" class="btn skin-color skin-border">现在去做风评</button>
+                            <button type="button"  class="btn skin-back data-dismiss="modal"">继续购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 温馨提示 -->
+            <footer  class="bg-white">
+                <div>
+                    <h1>转入规则</h1>
+                    <p>每次购买日为国家法定工作日，当天购买时间为15:30之前，15:30之后到 账的资金将于下个工作日进行购买。</p>
+                </div>
+                <div>
+                    <h1>购买规则</h1>
+                    <p>单客户认购起点金额5万元，以1元整数倍追加，单个客户最大持有金额2 亿元。</p>
+                </div>
+            </footer>
+
+
+
+
+
+        </div>
+        <button type="button" class="fixed-bottom border-radius_0 btn text-white btn-lg btn-block skin-back">立即购买</button>
+    </div>
+
+    <script src="http://resource.gongyinju.com/resource/CDN/jquery/3.2.1/jquery.min.js"></script>
+    <script src="http://resource.gongyinju.com/resource/CDN/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="http://resource.gongyinju.com/resource/CDN/popper.js/1.13.0/popper.js"></script>
+    <script src="http://resource.gongyinju.com/resource/CDN/echarts/4.0.0/echarts.min.js"></script>
+    <script src="assets/js/inquiryProcess.js"></script>
+</body>
+
+</html>
