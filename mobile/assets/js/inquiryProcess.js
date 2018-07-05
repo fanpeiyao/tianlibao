@@ -1,8 +1,14 @@
 $(function () {
+
+    //主题颜色
+    var themeLink , theme, arear, backs, weekChart;
+    $('#changeTheme')[0] ? themeLink = $('#changeTheme')[0].href : ''
+    themeLink ? theme = themeLink.split('css')[1] : theme = '/blue.';
+    backs = { '/red.': '#c7000b', '/blue.': '#418ce2', '/blue.Area': '#e5f1ff', '/red.Area': '#ffeded'}
+    arear = theme + 'Area'
     // 第一个图表
-    var weekChart = echarts.init(document.getElementById('weekChart'));
     weekOption = $(function () {
-        var weekChart = echarts.init(document.getElementById('weekChart'));
+        weekChart = echarts.init(document.getElementById('weekChart'));
         weekOption = {
             grid: {
                 x:40,
@@ -12,7 +18,7 @@ $(function () {
             },
             tooltip: {
                 trigger: 'axis',
-                backgroundColor: '#418ce2',
+                backgroundColor: backs[theme],
                 borderRadius: 0,
                 padding: [0, 3],
                 position: function (p) {
@@ -41,7 +47,7 @@ $(function () {
                 },
                 axisLine: {
                     lineStyle: {
-                        color: '#0079c3'
+                        color: backs[theme],
                     },
                     onZero: false,
                 },
@@ -78,16 +84,16 @@ $(function () {
                 smooth: true,
                 itemStyle: {
                     normal: {
-                        color: "#418ce2",  //连线颜色
+                        color: backs[theme],  //连线颜色
                         areaStyle: {
-                            color: "#e5f1ff",
+                            color: backs[arear],
                         },
                     }
                 },
                 lineStyle: {
                     normal: {
                         width: 1,  //连线粗细
-                        color: "#418ce2"  //连线颜色
+                        color: backs[theme]  //连线颜色
                     }
                 },
                 tooltip: {

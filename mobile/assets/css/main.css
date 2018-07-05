@@ -204,6 +204,10 @@ body {
     color: #fa8e3f !important;
 }
 
+.skin-red {
+    color: #c7000b !important;
+}
+
 .form-control:disabled,
 .form-control[readonly] {
     background-color: #fff;
@@ -262,7 +266,12 @@ body {
     height: 45px;
     font-size: 18px;
 }
-
+.display_none{
+    display: none;
+}
+.display_block{
+    display: block;
+}
 .c_formBox .form-control::-webkit-input-placeholder {
     color: #ccc;
 }

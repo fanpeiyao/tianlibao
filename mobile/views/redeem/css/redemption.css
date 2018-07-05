@@ -1,3 +1,14 @@
+
+
+/*赎回*/
+.redemption .c_formBox>h1 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 0 5px 0;
+}
+
+/*赎回成功*/
 .redemptionSuccess {
     height: 100vh;
     width: 100vw;

@@ -1,0 +1,12 @@
+.skin-color {
+    color: #c7000b !important;
+}
+
+.skin-back {
+    background: #c7000b;
+}
+
+.skin-border,
+.skin-border:before {
+    border-color: #c7000b !important;
+}

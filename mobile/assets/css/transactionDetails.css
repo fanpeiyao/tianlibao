@@ -8,20 +8,20 @@
     padding-top: 55px;
 }
 
-.transactionDetails .tab-pane>ul {
+.transactionDetails .tab-pane ul {
     padding-left: 15px;
 }
 
-.transactionDetails .tab-pane>ul li {
+.transactionDetails .tab-pane ul li {
     padding: 20px 12px 20px 0;
     margin: 0;
     border-bottom: 1px solid #f7f7f7;
 }
 
-.transactionDetails .tab-pane>ul li:last-child {
+.transactionDetails .tab-pane ul li:last-child {
     border-bottom: 0;
 }
 
-.transactionDetails .tab-pane>ul li .text-left {
+.transactionDetails .tab-pane ul li .text-left {
     padding-left: 0;
 }
