@@ -3,7 +3,7 @@
     <p class="c_title">“添利宝货币A”赎回</p>
     <div class="c_formBox bg-white">
         <h1>赎回信息</h1>
-        <form>
+        <form name="redeemForm" >
             <div class="form-group row">
                 <label for="accountName" class="col-3 col-form-label">交易账户名</label>
                 <div class="col-9 p-0">
@@ -35,18 +35,19 @@
             <div class="form-group row">
                 <label for="redemptionAmount" class="col-3 col-form-label">本次赎回金额</label>
                 <div class="col-9 p-0">
-                    <input type="text"  class="form-control" id="redemptionAmount" placeholder="请输入" >
+                    <input type="number" name="redemptionAmount" money-type ng-model="amount" class="form-control" id="redemptionAmount"  placeholder="请输入" required>
                 </div>
             </div>
 
         </form>
+
     </div>
     <p class="c_tips">※ 温馨提示</p>
     <p class="c_msg">
         客户于每个开放日的开放时间内赎回，资金实时入账。如出现巨额 赎回，有关赎回约定参见产品说明书。
     </p>
     <div class="skin-padding pt_30">
-        <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back">确定</button>
+        <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back"  ng-click="redeem()">确定</button>
     </div>
 
 </div>

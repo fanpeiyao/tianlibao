@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* @import url(font-awesome.min.css); */
 
 /* Reset */
 
@@ -73,7 +72,6 @@ figure,
 figcaption,
 footer,
 header,
-hgroup,
 menu,
 nav,
 output,
@@ -88,7 +86,7 @@ video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
+    font-style: normal;
     vertical-align: baseline;
 }
 
@@ -99,16 +97,12 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 menu,
 nav,
 section {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
 
 ol,
 ul {
@@ -125,7 +119,6 @@ blockquote:after,
 q:before,
 q:after {
     content: '';
-    content: none;
 }
 
 table {
@@ -138,6 +131,9 @@ body {
     color: #333;
     background: #f5f5f5;
     -webkit-text-size-adjust: none;
+    max-width: 100vw;
+    overflow-x: hidden;
+    line-height: 1;
 }
 
 /* Box Model */
@@ -327,6 +323,49 @@ body {
 
 /* tab样式结束 */
 
+
+
+
+/*赎回成功，购买成功 样式开始*/
+.tlb_success{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.tlb_success>div.text-center {
+    padding: 0 12px;
+}
+
+.tlb_success>div>h2 {
+    font-weight: 100;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.tlb_success>div>p {
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.tlb_success>div>h1 {
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    line-height: 40px;
+    margin-bottom: 80px;
+    color: #666;
+}
+
+.tlb_success>div>button {
+    margin-bottom: 80px;
+}
+
+.tlb_success>div>i {
+    font-size: 80px;
+}
+
+/*赎回成功，购买成功 样式结束*/
+
 /* 公共表单样式开始 */
 
 .c_title {
@@ -448,3 +487,5 @@ body {
 .tlb_modal .modal-footer>button.skin-border {
     background: transparent;
 }
+
+/* 弹出框 --- 结束 */

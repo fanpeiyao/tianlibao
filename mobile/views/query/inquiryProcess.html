@@ -57,13 +57,13 @@
                 <!-- tab切换按钮-->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="true">近七日</a>
+                        <i class="nav-link active" id="week-tab" data-toggle="tab" role="tab" href="#week"  aria-controls="week" aria-selected="true">近七日</i>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">近一月</a>
+                        <i class="nav-link" id="month-tab" data-toggle="tab"  role="tab" href="#month" aria-controls="month" aria-selected="false">近一月</i>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="threeMonth-tab" data-toggle="tab" href="#threeMonth" role="tab" aria-controls="threeMonth" aria-selected="false">近三月</a>
+                        <i class="nav-link" id="threeMonth-tab" data-toggle="tab" role="tab" href="#threeMonth" aria-controls="threeMonth" aria-selected="false">近三月</i>
                     </li>
                 </ul>
 
@@ -73,19 +73,37 @@
                 <div class="modal-dialog " role="document">
                     <div class="modal-content tlb_modal">
                         <div class="modal-header text-center">
-                            <h5 class="modal-title font-weight-bold font_15 margin_auto" id="exampleModalLongTitle">风险评估确认</h5>
+                            <h5 class="modal-title  font_15 margin_auto" id="exampleModalLongTitle">风险评估确认</h5>
                         </div>
-                        <div class="modal-body color_666 font-weight-bold line_20">
+                        <div class="modal-body color_666  line_20">
                              您在工商银行未进行投资风险承受能力评估或 该评估结果已失效，建议重新评估。
                         </div>
                         <div class="modal-footer pt-0">
                             <button type="button" class="btn skin-color skin-border">现在去做风评</button>
-                            <button type="button"  class="btn skin-back data-dismiss="modal"">继续购买</button>
+                            <button type="button"  class="btn skin-back" data-dismiss="modal" >继续购买</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+
+            <!-- 提醒签约弹框 -->
+            <div class="modal fade" id="confirmationModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalTitle" aria-hidden="true">
+                <div class="modal-dialog " role="document">
+                    <div class="modal-content tlb_modal">
+                        <div class="modal-header text-center">
+                            <h5 class="modal-title   font_15 margin_auto" id="confirmationModalTitle">签约确认</h5>
+                        </div>
+                        <div class="modal-body color_666  font_15 line_20">
+                            您在工商银行未签署法人理财协议，请进行签约。
+                        </div>
+                        <div class="modal-footer pt-0">
+                            <button type="button" class="btn skin-color skin-border"  data-dismiss="modal"> 取消</button>
+                            <button type="button"  class="btn skin-back" >进行签约</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- 温馨提示 -->
             <footer  class="bg-white">

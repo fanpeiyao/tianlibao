@@ -1,10 +1,14 @@
-/**
- * Created by chent on 2017/1/18.
- */
 
 angular.module("myApp").controller("redeemCtrl",["$scope","$rootScope","redeemService",
     function ($scope,$rootScope,redeemService) {
-
+        
+        
+        
+        
+        //确认赎回
+        $scope.redeem = function () {
+            console.log(3333333333)
+        }
     }]);
 
 

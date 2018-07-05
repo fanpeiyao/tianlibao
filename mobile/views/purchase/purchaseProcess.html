@@ -20,10 +20,12 @@
         <!-- 买入金额 -->
         <div class="skin-padding pt_20 bg-white mt_12 ">
             <h1 class="font_15 font-weight-bold">买入金额</h1>
-            <div class="inputBox d-flex">
-                <i>￥</i>
-                <input type="number" placeholder="50,000.00元起，递增1.00元" ng-model="purchaseAmount">
-            </div>
+            <form name = 'myForm'>
+                <div class="inputBox d-flex">
+                    <i>￥</i>
+                    <input type="number" name="purchaseAmount" placeholder="50,000.00元起，递增1.00元" ng-model="purchaseAmount" money-type>
+                </div>
+            </form>
             <div class="d-flex tips font_12">
                 <h1 class="font-weight-bold pt_20 pb_20">现在预约，预计6月26日（星期二）成交后不可撤销</h1>
                 <span class="skin-color">交易规则</span>
@@ -32,12 +34,14 @@
 
 
         <p class="c_agree d-flex skin-padding pt_30">
-            <i class="iconfont icon-yuanquan1 mr-1 pt-1 skin-color agreeIcon"></i>
+            <i class="iconfont mr-1 pt-1 skin-color agreeIcon" ng-class="{'icon-yuanquan1':!agreeFlag,'icon-icon-test':agreeFlag}" ng-click="agreeContract()"></i>
             <span class='color_999 line_20'>我已阅读
                 <i class="skin-color">《法人理财综合服务协议》</i> ，理解其内容并承担相关 风险，同时知道该产品周末和节假日不推送收益。</span>
         </p>
+
+
         <div class="skin-padding pt_30">
-            <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back" data-toggle="modal" data-target="#purchaseModal">确定</button>
+            <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back" data-toggle="modal" data-target="#purchaseModal" ng-disabled = "!agreeFlag || myForm.purchaseAmount.$modelValue == null">确定</button>
         </div>
 
 
