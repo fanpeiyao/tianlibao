@@ -1,0 +1,12 @@
+.skin-color {
+    color: #418ce2 !important;
+}
+
+.skin-back {
+    background: #418ce2;
+}
+
+.skin-border,
+.skin-border:before {
+    border-color: #418ce2 !important;
+}

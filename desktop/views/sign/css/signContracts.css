@@ -1,0 +1,50 @@
+.signContracts >section>nav {
+    padding: 0 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.signContracts >section>nav>.bg {
+    opacity: .1;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.signContracts article {
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.signContracts article>h1 {
+    padding: 30px 0 20px;
+    line-height: 24px;
+}
+
+.signContracts .sign_formBox>form {
+    width: 50%;
+    margin: auto;
+}
+
+.signContracts .sign_formBox>form input{
+    border-color: #e6e6e6;
+    padding-left: 16px;
+}
+.signContracts section .sign_formBox>form .code input{
+    width: 70%;
+}
+.signContracts section .sign_formBox>form .code span.skin-back{
+    width: 26%;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 3px;
+}
+.signContracts section .sign_formBox>form input::-webkit-input-placeholder{
+    color: #ccc;
+}
+.signContracts section .sign_formBox>form .sign_tips{
+    padding-left: 16px;
+}

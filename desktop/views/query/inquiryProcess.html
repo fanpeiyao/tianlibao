@@ -1,0 +1,216 @@
+
+<div class="desktop_inquiry pt_40 pb_40">
+    <nav class="d-flex justify-content-between   w-inner">
+        <div class="s_left bg-white ">
+            <!--第一层tab-->
+            <ul class="nav nav-tabs tab_one" role="tablist">
+                <li class="nav-item cursor_pointer">
+                    <i class="nav-link skin-after-back active mr-3" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">七日年华走势</i>
+                </li>
+                <li class="nav-item cursor_pointer">
+                    <i class="nav-link skin-after-back  " id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">万份收益走势</i>
+                </li>
+
+            </ul>
+            <div class="tab-content tab-content-one">
+                <!--七日年华走势-->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                    <!--第二层tab-->
+                    <ul class="nav nav-tabs tab_two mt-3" role="tablist">
+                        <li class="nav-item cursor_pointer">
+                            <i class="nav-link skin-after-back active mr-3" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="true">
+                                <div class="bg skin-back"></div>1个月
+                            </i>
+                        </li>
+                        <li class="nav-item cursor_pointer">
+                            <i class="nav-link skin-after-back " id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">
+                                <div class="bg skin-back"></div>3个月
+                            </i>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content tab-content-two mt-3">
+                        <!--七日年华走势-->
+                        <div class="tab-pane fade show active" id="week" role="tabpanel" aria-labelledby="week-tab">
+                            <div id="weekChart" class='echarts'></div>
+                        </div>
+                        <!--万份收益走势-->
+                        <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">2_333</div>
+                    </div>
+                </div>
+                <!--万份收益走势-->
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">222</div>
+            </div>
+
+        </div>
+        <div class="s_right bg-white ">
+            <nav class="d-flex align-content-center">
+                 <h1 class="font_18 font-weight-bold mr-2 ml-2">添利宝</h1><h1 class="color_666">货币A001（稳定型）</h1>
+
+            </nav>
+
+            <div class="s-r-bootom mt-md-4">
+                <div class="row">
+                    <div class="col-6 skin-color font_34 mb-3"><span class="ml-2">4.20%</span></div>
+                    <div class="col-6 font_24 mb-3 line_32">灵活赎回</div>
+                    <div class="col-6 color_999 mb-4"><span class="ml-2">七日年华收益率</span></div>
+                    <div class="col-6 color_999 mb-4">项目期限</div>
+                    <div class="col-6 color_999 mb-4"><span class="ml-2">当前阶段：<span class="color_333">开放</span></span></div>
+                    <div class="col-6 color_999 mb-4">项目安全登记：
+                        <i class="iconfont icon-xingji skin-yellow mr-1" ng-repeat="i in star"></i>
+                    </div>
+                    <div class="col-12 color_999 mb-5">
+                        <span class="ml-2">投资人条件：</span>
+                        <span class="color_333">风险承受能力“保守型”及以上</span>
+                    </div>
+                    <div class="col-12 color_999 mb-3">
+                        <span class="ml-2"><span class="color_333">账户余额：</span><span class="skin-color cursor_pointer mr-1">登录</span>可见</span>
+                    </div>
+                    <div class="col-5 color_999 mb-4">
+                        <div class="input_box ml-2">
+                            <input type="number" placeholder="50,000">
+                            <span class="color_999">元</span>
+                        </div>
+                    </div>
+                    <div class="col-3 color_999 mb-4 pl-0">
+                        <div class="skin-back text-white buyBtn cursor_pointer" data-toggle="modal" data-target="#queryModal">立即购买</div>
+                    </div>
+
+
+
+                    <div class="col-12 color_999 mb-4">
+                        <span class="ml-2">首投 <span class="skin-color">50,000.00</span> 元起，递增金额1.00元</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="w-100 bg-white mt_40">
+
+        <nav>
+            <ul class="nav nav-tabs bottom_tab w-inner" role="tablist">
+                <li class="nav-item cursor_pointer mr-5">
+                    <i class="nav-link skin-after-back active mr-3" id="detail-tab" data-toggle="tab" href="#detail" role="tab" aria-controls="detail" aria-selected="true">项目详情</i>
+                </li>
+                <li class="nav-item cursor_pointer">
+                    <i class="nav-link skin-after-back  " id="problem-tab" data-toggle="tab" href="#problem" role="tab" aria-controls="problem" aria-selected="false">常见问题</i>
+                </li>
+
+            </ul>
+        </nav>
+
+        <div class="tab-content tab-content-bottom w-inner">
+            <!--七日年华走势-->
+            <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+
+                <h1 class="pt_30 pb_30">本产品是中国工商银行发行添利宝理财产品（货币A001）</h1>
+
+                <div class="rowBox line_26">
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">申购时间</div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">国家法定工作日，当天购买时间15:30</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品名称</div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">添利宝理财产品（货币A001）</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品管理人</div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">中国工商银行</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品托管人</div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">中国工商银行</div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品风险评级</div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">中低风险</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品存续期限</div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">无固定期限持续运作</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">产品发售对象</div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">具备完全民事行为能力并通过投资风险承受能力测评的企业。</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">投资策略</div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">基于对国家财政政策、货币政策的深入分析，采用主动型投资策略，主要包括：信用风险控制、杠杆套利和相对价值判断等管理
+                            手段，对债券市场、债券收益率曲线以及各种流动性资产价格的变化进行预测，相机而动、积极调整。</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">申购与赎回的起点 </div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">投资者初始申购最低金额为人民币50,000元，1元递增。</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">收益计算规则 </div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">当日收益=持有份额×1.00×当日的万份收益/10000</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">收益查询 </div>
+                        <div class="col-10  pt-3 pb-3  pl-4 color_666">T日15：30前提交的申购申请， T+1个交易日确认份额并开始收益起算，T+2交易日可以T+1交易日的收益且可以发起赎回申请。
+                            如在T日15：30后申购，则顺延一个交易日。遇节假日顺延。</div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2 pt-3 pb-3 text-right">暂停赎回或延缓支付赎回款项  </div>
+                        <div class="col-10  pt-3 pb-3 pl-4 color_666">
+                            发生下列情形时，产品管理人可暂停接受投资者的赎回申请或延缓支付赎回款项：<br/>
+                            1.因不可抗力导致产品管理人不能支付赎回款项。<br/>
+                            2.发生产品合同规定的暂停产品资产估值情况时。<br/>
+                            3.证券交易所交易时间非正常停市，导致产品管理人无法计算当日产品资产净值。<br/>
+                            4.本产品出现当日净收益或累计未分配收益小于零的情形，为保护持有人的利益，产品管理人可视情况暂停本产品的赎回。<br/>
+                            5.连续两个或两个以上开放日发生巨额赎回。<br/>
+                            6.产品管理人、托管人、登记机构、销售机构等因异常情况无法办理赎回业务。<br/>
+                            7.法律法规规定或中国保监会认定的其他情形。
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!--常见问题-->
+            <div class="tab-pane fade" id="problem" role="tabpanel" aria-labelledby="problem-tab">222</div>
+        </div>
+
+    </section>
+</div>
+
+
+
+<!--data-toggle="modal" data-target="#queryModal"-->
+<!-- 提醒签约弹框 -->
+<div class="modal fade" id="queryModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalTitle" aria-hidden="true">
+    <div class="modal-dialog margin_auto" role="document">
+        <div class="modal-content tlb_modal">
+            <div class="modal-header text-center">
+                <h5 class="modal-title color_666  font_16 margin_auto" id="confirmationModalTitle">签约确认</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="iconfont icon-guanbi"></i>
+                </button>
+            </div>
+            <div class="modal-body color_666  font_16 line_26 pb_40">
+                您在工商银行未签署法人理财协议，请进行签约。
+            </div>
+            <div class="modal-footer pt-0">
+                <button type="button"  class="btn skin-back one" ng-click="query()" >进行签约</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+.profitDetails {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.profitDetails>header {
+    padding: 33px 12px;
+    margin-bottom: 12px;
+}
+
+.profitDetails>header .mb_10 {
+    font-size: 24px;
+}
+
+.profitDetails .tab-content>ul li {
+    padding: 20px 12px;
+    border-bottom: 1px solid #f7f7f7;
+}

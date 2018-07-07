@@ -1,0 +1,104 @@
+
+<div class="signContracts pt_40 pb_40">
+    <section class="skin-border tlb_top_line  w-inner bg-white ">
+
+        <nav class=" d-flex justify-content-between align-items-center">
+            <div class="bg skin-back"></div>
+            <p class=" skin-padding font_15 font-weight-bold">签约及购买信息</p>
+            <p class="c_title skin-color ">《法人理财综合服务协议》</p>
+        </nav>
+
+
+        <!-- 添利宝 -->
+        <article  class="bg-white skin-padding  font-weight-bold">
+            <h1 class="skin-padding">【 添利宝 】工商银行为企业客户量身定做的一款具有现金管理和投资理财服务功能的产品。</h1>
+            <h2 class='color_999 skin-padding line_26'>★ 安全稳健：PR1级理财产品，业绩比较基准4.0%。<br/>★ 申购便利：每个工作日开放时间申购实时确认起息。<br/> ★ 即时赎回：开放日开放时间赎回资金实时到账，单个客户最大持有金额2亿元。</h2>
+
+
+        </article>
+        <!-- 签约及购买信息 -->
+        <div class="sign_formBox bg-white">
+            <form name="signForm">
+                <div class="form-group row mb_40">
+                    <label for="signDate" class="pl-0 col-2 col-form-label text-right mr-3">签约日期</label>
+                    <div class="col-9 p-0">
+                        <input type="text" readonly class=" form-control skin-color" id="signDate" value="2018-06-22">
+                    </div>
+                </div>
+
+
+                <div class="form-group row mb_40">
+                    <label for="signNumber" class="pl-0 col-2 col-form-label mr-3  text-right">签约账号</label>
+                    <div class="col-9 p-0">
+                        <input type="text" class=" form-control" id="signNumber" placeholder="请输入一个19位工行账号作为基金交易账号">
+                    </div>
+                </div>
+
+                <div class="form-group row mb_40">
+                    <label for="signName" class="pl-0 col-2 col-form-label mr-3 text-right">签约户名</label>
+                    <div class="col-9 p-0">
+                        <input type="text" class=" form-control" id="signName" placeholder="请输结算账号对应的结算户名">
+                    </div>
+                </div>
+
+                <div class="form-group row mb_40">
+                    <label for="name" class="pl-0 col-2 col-form-label mr-3 text-right">操作员姓名</label>
+                    <div class="col-9 p-0">
+                        <input type="text"  class=" form-control " id="name"  placeholder="请输入">
+                    </div>
+                </div>
+
+                <div class="form-group row mb_40">
+                    <label for="phone" class="pl-0 col-2 col-form-label mr-3 text-right">操作员手机号</label>
+                    <div class="col-9 p-0">
+                        <input type="text"  class=" form-control" id="phone"  placeholder="请输入">
+                    </div>
+                </div>
+
+                <div class="form-group row code mb_40">
+                    <label for="code" class="pl-0 col-2 col-form-label mr-3  text-right">短信效验码</label>
+                    <div class="col-9 p-0 d-flex justify-content-between">
+                        <input type="text" class=" form-control" id="code" placeholder="请输入">
+                        <span class="skin-back text-white cursor_pointer">获取验证码</span>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group row mb_40">
+                    <label for="password" class="pl-0 col-2 col-form-label mr-3  text-right">交易密码</label>
+                    <div class="col-9 p-0">
+                        <input type="text" class=" form-control" id="password" placeholder="请输入6位带有字母(分大小写)数字组合的密码">
+                    </div>
+                </div>
+
+
+
+                <div class="form-group row mb_10">
+                    <label for="confirmPass" class="pl-0 col-2 col-form-label mr-3  text-right">交易密码确认</label>
+                    <div class="col-9 p-0">
+                        <input type="text"  class="form-control" id="confirmPass" placeholder="请输入" >
+                    </div>
+                </div>
+
+                <div class="form-group row mb_40">
+                    <label class="pl-0 col-2 col-form-label mr-3  text-right"></label>
+                    <div class="col-9 p-0 line_20 color_999 sign_tips">
+                        协议签约确认情况以及若出现产品申购失败情况时，将以短信 形式发至操作人员手机号码，请注意查收。
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <footer class="pt-5 pb-5">
+            <button type="button" class="w_300 margin_auto btn tlb_button text-white btn-lg btn-block skin-back font_16"    data-toggle="modal" data-target="#purchaseModal">确认支付</button>
+            <p class=" d-flex pt_15 justify-content-center">
+                <i class="iconfont mr-1 pt-1 skin-color agreeIcon cursor_pointer" ng-class="{'icon-yuanquan1':!agreeFlag,'icon-xuanzhong':agreeFlag}" ng-click="agreeContract()"></i>
+                <span class='color_999 line_20 cursor_pointer'>我已同意并签署
+                    <i class="skin-color">《法人理财综合服务协议》</i> </span>
+            </p>
+        </footer>
+    </section>
+
+</div>

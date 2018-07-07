@@ -1,0 +1,27 @@
+.transactionDetails {
+    height: 100vh;
+    width: 100vw;
+    background: #f5f5f5;
+}
+
+.transactionDetails .tab-content {
+    padding-top: 55px;
+}
+
+.transactionDetails .tab-pane ul {
+    padding-left: 15px;
+}
+
+.transactionDetails .tab-pane ul li {
+    padding: 20px 12px 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.transactionDetails .tab-pane ul li:last-child {
+    border-bottom: 0;
+}
+
+.transactionDetails .tab-pane ul li .text-left {
+    padding-left: 0;
+}

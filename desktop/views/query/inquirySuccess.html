@@ -1,0 +1,116 @@
+
+    <div class="inquiryProcess inquiryProcessSuccess">
+        <!-- 页面内容 -->
+        <div class="inner">
+            <header class=" skin-padding bg-white">
+                <h1 class="text-center title pt_30">金额（元）</h1>
+                <h3 class="skin-orange">100,039.10</h3>
+                <h1 class="text-center title pt_10">昨日收益（元）2018-06-20</h1>
+
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col">
+                            <p class="mb_10 ">4.12%</p>
+                            <p class="tips">七日年华</p>
+                        </div>
+                        <div class="col">
+                            <p class="mb_10 ">暂未更新</p>
+                            <p class="tips">昨日收益（元）</p>
+                        </div>
+                        <div class="col">
+                            <p class="mb_10 skin-orange ">39.21</p>
+                            <p class="tips">累计收益（元）</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- 报表 -->
+            <section  class="bg-white pt_15">
+
+                <!-- tab切换框 放图表 -->
+                <div class="tab-content  skin-padding" id="myTabContent">
+                    <div class="tab-pane fade show active" id="week" role="tabpanel" aria-labelledby="week-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">七日年化收益率</div>
+                                <div class="col tips text-right p-0 skin-color">查看收益明细</div>
+                            </div>
+                        </div>
+                        <div id="weekChart" class='echarts'></div>
+                    </div>
+                    <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">一月年化收益率</div>
+                                <div class="col tips text-right p-0">万份收益：1.2579元</div>
+                            </div>
+                        </div>
+                        <div id="monthChart"  class='echarts'></div>
+                    </div>
+                    <div class="tab-pane fade" id="threeMonth" role="tabpanel" aria-labelledby="threeMonth-tab">
+                        <div class="container title  ">
+                            <div class="row  skin-padding">
+                                <div class="col text-left p-0 font-weight-bold">三月年化收益率</div>
+                                <div class="col tips text-right p-0">万份收益：1.2579元</div>
+                            </div>
+                        </div>
+                        <div id="threeMonthChart"  class='echarts'></div>
+                    </div>
+                </div>
+                <!-- tab切换按钮-->
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="true">近七日</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">近一月</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="threeMonth-tab" data-toggle="tab" href="#threeMonth" role="tab" aria-controls="threeMonth" aria-selected="false">近三月</a>
+                    </li>
+                </ul>
+
+            </section>
+
+            <!-- 温馨提示 -->
+            <footer  class="bg-white">
+                <div>
+                    <h2>签约信息</h2>
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-left">添利宝货币A</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-right"><span class="skin-color">更改</span><i class="iconfont icon-arror-r"></i></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-left">购买金额</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-right">1,3424,43.00</p>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col">
+                            <p class="text-left">起息时间</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-right">2018-06-22</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        </div>
+
+    </div>

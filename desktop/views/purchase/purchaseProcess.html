@@ -1,0 +1,68 @@
+
+<div class="purchaseProcess pb_40">
+    <nav class="d-flex w-inner color_333 back_f5f5f5">
+        <div class="p-2">添利宝货币A（001）</div>
+        <div class="ml-auto p-2">购买金额：<span class="skin-color">50,000.00 </span>元</div>
+    </nav>
+
+    <section class="skin-border tlb_top_line  w-inner bg-white ">
+        <h2 class="pl-2">使用账户余额：<span class="skin-orange">100,000.00</span> 元 <span class="skin-color cursor_pointer ml-3">使用</span></h2>
+        <div class="d-flex mt_40">
+
+            <div class="p-2 text-right">银行卡：</div>
+            <div class="paycard mr-3 cursor_pointer" ng-class="{'skin-color skin-border checked':payCard == 1,'unchecked':payCard == 0}">
+                <label for="radio_1"  class="cursor_pointer d-flex">
+                    <i class="iconfont icon-gongshang1 mr-2  skin-color "></i>
+                    <span class="font-weight-bold  font_16">6214 **** **** 2819</span>
+                    <span class="tag text-white ml-3"><div class="bg skin-back"></div>储蓄卡</span>
+                </label>
+                <i class="iconfont icon-xuanzhong1"></i>
+                <input type="radio" ng-value=1 ng-model="payCard" name="card" id="radio_1">
+            </div>
+            <div class="paycard mr-3 cursor_pointer" ng-class="{'skin-color skin-border checked':payCard == 0,'unchecked':payCard == 1}">
+                <label for="radio_2"  class="cursor_pointer d-flex">
+                    <i class="iconfont icon-gongshang1 mr-2  skin-color "></i>
+                    <span class="font-weight-bold  font_16">6214 **** **** 2819</span>
+                    <span class="tag text-white ml-3"><div class="bg skin-back"></div>储蓄卡</span>
+                </label>
+                <i class="iconfont icon-xuanzhong1"></i>
+                <input type="radio" ng-value=0 ng-model="payCard" name="card" id="radio_2">
+            </div>
+        </div>
+
+        <h1 class="pt_15 tips ml_86">现在预约，预计6月26日（星期二）成交后不可撤销 <span class="skin-color cursor_pointer  ml-3">交易规则</span></h1>
+
+        <footer class="ml_86 pt-5">
+            <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back font_16"    data-toggle="modal" data-target="#purchaseModal">确认支付</button>
+            <p class="c_agree d-flex pt_15">
+                <i class="iconfont mr-1 pt-1 skin-color agreeIcon cursor_pointer" ng-class="{'icon-yuanquan1':!agreeFlag,'icon-xuanzhong':agreeFlag}" ng-click="agreeContract()"></i>
+                <span class='color_999 line_20 cursor_pointer'>我已同意并签署
+                <i class="skin-color">《法人理财综合服务协议》</i> </span>
+            </p>
+        </footer>
+    </section>
+
+
+</div>
+
+
+
+<!-- 提醒签约弹框 -->
+<div class="modal fade" id="purchaseModal" tabindex="-1" role="dialog" aria-labelledby="confirmationModalTitle" aria-hidden="true">
+    <div class="modal-dialog margin_auto" role="document">
+        <div class="modal-content tlb_modal">
+            <div class="modal-header text-center">
+                <h5 class="modal-title color_666  font_16 margin_auto" id="confirmationModalTitle">提示</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="iconfont icon-guanbi"></i>
+                </button>
+            </div>
+            <div class="modal-body color_666  font_16 line_26 pb_40">
+                确认购买产品添利宝货币A（001），购买金额50,000元， 交易卡号 <span>6214**** **** 2819</span>
+            </div>
+            <div class="modal-footer pt-0">
+                <button type="button"  class="btn skin-back one" ng-click="purchase()" >确认</button>
+            </div>
+        </div>
+    </div>
+</div>

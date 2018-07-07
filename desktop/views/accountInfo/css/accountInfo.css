@@ -1,0 +1,12 @@
+/*修改密码*/
+.changePassword {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background: #f5f5f5;
+}
+.accountInformation {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
