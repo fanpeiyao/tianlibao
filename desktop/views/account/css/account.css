@@ -1,0 +1,64 @@
+/*修改密码*/
+
+.accountInformation #money::-webkit-input-placeholder,
+.changePassword #money::-webkit-input-placeholder{
+    color: #fa8e3f;
+}
+.accountInformation >section>nav>.bg ,
+.changePassword >section>nav>.bg{
+    opacity: .08;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.accountInformation >section>nav,
+.changePassword >section>nav  {
+    padding: 0 12px;
+    position: relative;
+    overflow: hidden;
+}
+.changePassword article,.accountInformation article,
+.accountInformation article,.accountInformation article  {
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.accountInformation article>h1 ,
+.changePassword article>h1{
+    padding: 30px 0 20px;
+    line-height: 24px;
+}
+
+.accountInformation .sign_formBox>form,
+.changePassword .sign_formBox>form{
+    width: 50%;
+    margin: auto;
+}
+
+.accountInformation .sign_formBox>form input,
+.changePassword .sign_formBox>form input{
+    border-color: #e6e6e6;
+    padding-left: 16px;
+}
+.accountInformation section .sign_formBox>form .code input,
+.changePassword section .sign_formBox>form .code input{
+    width: 70%;
+}
+.accountInformation section .sign_formBox>form .code span.skin-back,
+.changePassword section .sign_formBox>form .code span.skin-back{
+    width: 26%;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 3px;
+}
+.accountInformation section .sign_formBox>form input::-webkit-input-placeholder,
+.changePassword section .sign_formBox>form input::-webkit-input-placeholder{
+    color: #ccc;
+}
+.accountInformation section .sign_formBox>form .sign_tips,
+.changePassword section .sign_formBox>form .sign_tips{
+    padding-left: 16px;
+}
