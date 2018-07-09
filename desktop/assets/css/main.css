@@ -113,7 +113,13 @@ blockquote,
 q {
     quotes: none;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type="number"]{
+    -moz-appearance: textfield;
+}
 blockquote:before,
 blockquote:after,
 q:before,
@@ -608,4 +614,19 @@ header .head_bottom{
     align-items: center;
 }
 
-
+/*公共表格样式*/
+.tlb_table thead{
+    background: #fafafa;
+    font-weight: normal;
+}
+.tlb_table.table thead th{
+    border-bottom:0;
+    border-top:0;
+    font-weight: normal;
+}
+.tlb_table.table td ,.tlb_table.table th{
+    border-top: 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-weight: normal;
+    padding: 1rem;
+}

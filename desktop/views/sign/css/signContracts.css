@@ -5,7 +5,7 @@
 }
 
 .signContracts >section>nav>.bg {
-    opacity: .1;
+    opacity: .08;
     height: 45px;
     width: 100%;
     position: absolute;
@@ -48,3 +48,147 @@
 .signContracts section .sign_formBox>form .sign_tips{
     padding-left: 16px;
 }
+
+/*签约失败*/
+.signFailure nav{
+ padding: 1.2rem 0;
+ width: 100%;
+ border-bottom: 1px solid #f0f0f0;
+}
+.signFailure .purchaseInfo{
+    position: relative;
+    overflow: hidden;
+}
+.signFailure .purchaseInfo>.bg{
+    position: absolute;
+    opacity: .08;
+    height: 100px;
+    width:100%;
+}
+
+.signFailure .purchaseInfo .row .col{
+    border-left: 1px dashed #e6e6e6;
+}
+.signFailure .failProcess{
+    width: 1060px;
+    margin: auto;
+    height: 120px;
+    padding-top:80px;
+}
+.signFailure .failProcess .progress {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    height: 2.2rem;
+    overflow: initial;
+    background-color: #ebebeb;
+     border-radius: 0;
+}
+
+.signFailure .failProcess .progress .line {
+    width: 50px;height: 20px;
+    border-left-width:1px;
+    border-top-width:1px;
+    border-style:solid;
+    border-color: #ebebeb;
+    position: absolute;
+    left: 70%;
+    top: -1.2rem;
+
+}
+.signFailure .failProcess .progress .line>h5,
+.signFailure .failProcess .progress .line>h6 {
+   width: 100px;
+    position: absolute;
+}
+.signFailure .failProcess .progress .line>h5 {
+    top:-50px;
+}
+.signFailure .failProcess .progress .line>h6 {
+    top:-25px;
+}
+.signFailure .failProcess .progress .line:first-child {
+    left: 0;
+}
+.signFailure .failProcess .progress .line:nth-child(3){
+    border-left-width: 0;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    left: 1010px;
+}
+
+.signFailure .failProcess .progress .line:nth-child(3) h5,
+.signFailure .failProcess .progress .line:nth-child(3) h6{
+    right: 0;
+}
+.signFailure .failProcess .progress-bar{
+    width:70%;
+}
+
+
+
+
+.signFailure .signDate{
+    width: 1060px;
+    margin: auto;
+}
+
+
+.signFailure .signBtnBox{
+    width: 1060px;
+    margin: auto;
+}
+
+.signFailure .signBtnBox>.skin-back.btn {
+    border-radius: 2px;
+    width: 220px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signFailure>footer{
+    width: 1060px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

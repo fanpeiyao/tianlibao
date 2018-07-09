@@ -2,7 +2,7 @@
  * Created by chent on 2017/1/18.
  */
 
-angular.module("myApp").controller("signCtrl",["$scope","$rootScope","signService",
+angular.module("myApp").controller("signContracts",["$scope","$rootScope","signService",
     function ($scope,$rootScope,signService) {
 
         //是否同意合同
@@ -21,4 +21,14 @@ angular.module("myApp").controller("signCtrl",["$scope","$rootScope","signServic
 
     
         
+}]);
+angular.module("myApp").controller("signFailureCtrl",["$scope","$rootScope","signService",
+    function ($scope,$rootScope,signService) {
+
+
+
+
+
+
+
     }]);

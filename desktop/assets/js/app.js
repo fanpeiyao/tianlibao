@@ -44,7 +44,12 @@ myApp.run(['$rootScope', '$state', '$stateParams',
         .state('sign.signContracts',{
             url:'/signContracts',
             templateUrl:'views/sign/signContracts.html',
-            controller:'signCtrl'
+            controller:'signContracts'
+        })
+        .state('sign.signFailure',{
+            url:'/signFailure',
+            templateUrl:'views/sign/signFailure.html',
+            controller:'signFailureCtrl'
         })
 
 
@@ -258,6 +263,32 @@ myApp.run(['$rootScope', '$state', '$stateParams',
             templateUrl:'views/redeem/redemptionSuccess.html',
             controller:'redeemSuccessCtrl'
         })
+
+
+        //赎回
+        .state('financial',{
+            url:'/financial',
+            template:'<div ng-class="transition" ui-view></div>',
+            abstract:true,
+            resolve:{
+                service1:"financialService",
+                service:['$ocLazyLoad', function($ocLazyLoad) {
+                    return $ocLazyLoad.load({
+                        files:[
+                            'views/financial/css/financial.css',
+                            'assets/js/controllers/financial-ctrl.js'
+                        ]
+                    });
+                }]
+            }
+
+        })
+        .state('financial.financialDetail',{
+            url:'/financialDetail',
+            templateUrl:'views/financial/financialDetail.html',
+            controller:'financialDetailCtrl'
+        })
+
 
 
 

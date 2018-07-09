@@ -1,9 +1,74 @@
 
 
 /*赎回*/
-.redemption .c_formBox>h1 {
-    color: #333333;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 15px 0 5px 0;
+.redemption >section>nav {
+    padding: 0 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.redemption >section>nav>.bg {
+    opacity: .08;
+    height: 45px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+
+.redemption #money::-webkit-input-placeholder{
+     color: #fa8e3f;
+}
+.redemption article {
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding-bottom: 20px;
+}
+
+.redemption article>h1 {
+    padding: 30px 0 20px;
+    line-height: 24px;
+}
+
+.redemption .sign_formBox>form {
+    width: 50%;
+    margin: auto;
+}
+
+.redemption .sign_formBox>form input{
+    border-color: #e6e6e6;
+    padding-left: 16px;
+}
+.redemption section .sign_formBox>form .code input{
+    width: 70%;
+}
+.redemption section .sign_formBox>form .code span.skin-back{
+    width: 26%;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 3px;
+}
+.redemption section .sign_formBox>form input::-webkit-input-placeholder{
+    color: #ccc;
+}
+.redemption section .sign_formBox>form .sign_tips{
+    padding-left: 16px;
+}
+
+
+/*赎回成功*/
+.redemptionSuccess section {
+    margin-top: 40px;
+    padding-top: 40px;
+}
+.tlb_desktop_success.redemptionSuccess section>div>h1.text-left {
+    width:580px;
+    text-align: left;
+    padding: 0;
+    margin:30px auto 0!important;
+}
+.tlb_desktop_success.redemptionSuccess section>div>p.text-left {
+    width:580px;
+    text-align: left;
+    margin:10px auto 30px!important;
 }

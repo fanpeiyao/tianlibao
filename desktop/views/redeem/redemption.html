@@ -1,53 +1,82 @@
 
-<div class="redemption">
-    <p class="c_title">“添利宝货币A”赎回</p>
-    <div class="c_formBox bg-white">
-        <h1>赎回信息</h1>
-        <form name="redeemForm" >
-            <div class="form-group row">
-                <label for="accountName" class="col-3 col-form-label">交易账户名</label>
-                <div class="col-9 p-0">
-                    <input type="text" readonly class="form-control " id="accountName" value="李 **">
+<div class="redemption pt_40 pb_40">
+    <section class="skin-border tlb_top_line  w-inner bg-white ">
+
+        <nav class=" d-flex justify-content-between align-items-center">
+            <div class="bg skin-back"></div>
+            <p class=" skin-padding font_15 font-weight-bold c_title ">“添利宝货币A”赎回</p>
+        </nav>
+
+
+        <!-- 添利宝 -->
+        <article  class="bg-white skin-padding  font-weight-bold">
+            <h1 class="skin-padding">【 添利宝 】工商银行为企业客户量身定做的一款具有现金管理和投资理财服务功能的产品。</h1>
+            <h2 class='color_999 skin-padding line_26'>★ 安全稳健：PR1级理财产品，业绩比较基准4.0%。<br/>★ 申购便利：每个工作日开放时间申购实时确认起息。<br/> ★ 即时赎回：开放日开放时间赎回资金实时到账，单个客户最大持有金额2亿元。</h2>
+
+
+        </article>
+        <!-- 签约及购买信息 -->
+        <div class="sign_formBox bg-white">
+            <form name="signForm">
+
+
+
+                <div class="form-group row mb_40">
+                    <label for="accontName" class="pl-0 col-2 col-form-label mr-3 text-right">交易账户名</label>
+                    <div class="col-9 p-0">
+                        <input type="text" class=" form-control" id="accontName" value="李 **">
+                    </div>
                 </div>
-            </div>
 
-
-            <div class="form-group row">
-                <label for="accountNumber" class="col-3 col-form-label">交易账号</label>
-                <div class="col-9 p-0">
-                    <input type="text" readonly class="form-control " id="accountNumber" value="6222 **** **** **** 297">
+                <div class="form-group row mb_40">
+                    <label for="accontNo" class="pl-0 col-2 col-form-label mr-3 text-right">交易账号</label>
+                    <div class="col-9 p-0">
+                        <input type="text"  class=" form-control " id="accontNo"  placeholder="请输入">
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group row">
-                <label for="balance" class="col-3 col-form-label">卡内余额</label>
-                <div class="col-9 p-0">
-                    <input type="text" readonly class="form-control skin-orange" id="balance" value="待查询">
+
+
+                <!--<div class="form-group row code mb_40">
+                    <label for="money" class="pl-0 col-2 col-form-label mr-3  text-right">卡内余额</label>
+                    <div class="col-9 p-0 d-flex justify-content-between">
+                        <input type="text" class=" form-control skin-orange" id="money" placeholder="待查询">
+                        <span class="skin-back text-white cursor_pointer">查询</span>
+
+                    </div>
+                </div>-->
+
+
+                <div class="form-group row mb_40">
+                    <label for="redeemMoney" class="pl-0 col-2 col-form-label mr-3  text-right">可赎回余额</label>
+                    <div class="col-9 p-0">
+                        <input type="text" class=" form-control skin-orange" id="redeemMoney"  value="1,000,000.00">
+                    </div>
                 </div>
-            </div>
-            <div class="form-group row">
-                <label for="redemableAmount" class="col-3 col-form-label">可赎回金额</label>
-                <div class="col-9 p-0">
-                    <input type="text" readonly class="form-control skin-orange" id="redemableAmount" value="100,000.00 元">
+
+
+
+                <div class="form-group row mb_10">
+                    <label for="phone" class="pl-0 col-2 col-form-label mr-3  text-right">操作人员手机号</label>
+                    <div class="col-9 p-0">
+                        <input type="text"  class="form-control" id="phone" placeholder="请输入" >
+                    </div>
                 </div>
-            </div>
 
-            <div class="form-group row">
-                <label for="redemptionAmount" class="col-3 col-form-label">本次赎回金额</label>
-                <div class="col-9 p-0">
-                    <input type="number" name="redemptionAmount" money-type ng-model="amount" class="form-control" id="redemptionAmount"  placeholder="请输入" required>
+                <div class="form-group row mb_40">
+                    <label class="pl-0 col-2 col-form-label mr-3  text-right"></label>
+                    <div class="col-9 pr-0 line_20 color_999 sign_tips">
+                        客户于每个开放日的开放时间内赎回，资金实时入账。如出现巨额赎回，有关赎回约定参见产品说明书。
+                    </div>
                 </div>
-            </div>
 
-        </form>
+            </form>
+        </div>
 
-    </div>
-    <p class="c_tips">※ 温馨提示</p>
-    <p class="c_msg">
-        客户于每个开放日的开放时间内赎回，资金实时入账。如出现巨额 赎回，有关赎回约定参见产品说明书。
-    </p>
-    <div class="skin-padding pt_30">
-        <button type="button" class="btn tlb_button text-white btn-lg btn-block skin-back"  ng-click="redeem()">确定</button>
-    </div>
+        <footer class="pt-5 pb-5">
+            <button type="button" class="w_300 margin_auto btn tlb_button text-white btn-lg btn-block skin-back font_16"    data-toggle="modal" data-target="#purchaseModal">确定</button>
+
+        </footer>
+    </section>
 
 </div>
