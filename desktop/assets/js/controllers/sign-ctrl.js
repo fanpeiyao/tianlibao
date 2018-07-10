@@ -17,6 +17,8 @@ angular.module("myApp").controller("signContracts",["$scope","$rootScope","signS
             // $('#purchaseModal').modal('hide')
         }
 
+        
+        $scope.now_date = new Date().format()
 
 
     
