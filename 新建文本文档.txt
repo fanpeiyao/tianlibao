@@ -1,82 +1,82 @@
 
-var filterApp=angular.module('FilterApp', [])
-filterApp.controller('AmountFilter',function(){
-	
+var filterApp = angular.module('FilterApp', [])
+filterApp.controller('AmountFilter', function () {
+
 });
- 
-filterApp.filter('Chinese',function(){
-	return function(input){
-		var numberValue=new String(Math.round(input*100)); // Êı×Ö½ğ¶î
-		var chineseValue=""; // ×ª»»ºóµÄºº×Ö½ğ¶î
-		var String1 = "ÁãÒ¼·¡ÈşËÁÎéÂ½Æâ°Æ¾Á"; // ºº×ÖÊı×Ö
-		var String2 = "ÍòÇª°ÛÊ°ÒÚÇª°ÛÊ°ÍòÇª°ÛÊ°Ôª½Ç·Ö"; // ¶ÔÓ¦µ¥Î»
-		var len=numberValue.length; // numberValue µÄ×Ö·û´®³¤¶È
-		var Ch1; // Êı×ÖµÄººÓï¶Á·¨
-		var Ch2; // Êı×ÖÎ»µÄºº×Ö¶Á·¨
-		var nZero=0; // ÓÃÀ´¼ÆËãÁ¬ĞøµÄÁãÖµµÄ¸öÊı
-		var String3; // Ö¸¶¨Î»ÖÃµÄÊıÖµ
-		if(len>15){
-		alert("³¬³ö¼ÆËã·¶Î§");
-		return "";
-		}
-		if (numberValue==0){
-		chineseValue = "ÁãÔªÕû";
-		return chineseValue;
-		}
- 
-		String2 = String2.substr(String2.length-len, len); // È¡³ö¶ÔÓ¦Î»ÊıµÄSTRING2µÄÖµ
-		for(var i=0; i<len; i++){
-		String3 = parseInt(numberValue.substr(i, 1),10); // È¡³öĞè×ª»»µÄÄ³Ò»Î»µÄÖµ
-		if ( i != (len - 3) && i != (len - 7) && i != (len - 11) && i !=(len - 15) ){
-		if ( String3 == 0 ){
-		Ch1 = "";
-		Ch2 = "";
-		nZero = nZero + 1;
-		}
-		else if ( String3 != 0 && nZero != 0 ){
-		Ch1 = "Áã" + String1.substr(String3, 1);
-		Ch2 = String2.substr(i, 1);
-		nZero = 0;
-		}
-		else{
-		Ch1 = String1.substr(String3, 1);
-		Ch2 = String2.substr(i, 1);
-		nZero = 0;
-		}
-		}
-		else{ // ¸ÃÎ»ÊÇÍòÒÚ£¬ÒÚ£¬Íò£¬ÔªÎ»µÈ¹Ø¼üÎ»
-		if( String3 != 0 && nZero != 0 ){
-		Ch1 = "Áã" + String1.substr(String3, 1);
-		Ch2 = String2.substr(i, 1);
-		nZero = 0;
-		}
-		else if ( String3 != 0 && nZero == 0 ){
-		Ch1 = String1.substr(String3, 1);
-		Ch2 = String2.substr(i, 1);
-		nZero = 0;
-		}
-		else if( String3 == 0 && nZero >= 3 ){
-		Ch1 = "";
-		Ch2 = "";
-		nZero = nZero + 1;
-		}
-		else{
-		Ch1 = "";
-		Ch2 = String2.substr(i, 1);
-		nZero = nZero + 1;
-		}
-		if( i == (len - 11) || i == (len - 3)){ // Èç¹û¸ÃÎ»ÊÇÒÚÎ»»òÔªÎ»£¬Ôò±ØĞëĞ´ÉÏ
-		Ch2 = String2.substr(i, 1);
-		}
-		}
-		chineseValue = chineseValue + Ch1 + Ch2;
-		}
- 
-		if ( String3 == 0 ){ // ×îºóÒ»Î»£¨·Ö£©Îª0Ê±£¬¼ÓÉÏ¡°Õû¡±
-		chineseValue = chineseValue + "Õû";
-		}
- 
-		return chineseValue;
- 
-	};
+
+filterApp.filter('Chinese', function () {
+    return function (input) {
+        var numberValue = new String(Math.round(input * 100)); // æ•°å­—é‡‘é¢
+        var chineseValue = ""; // è½¬æ¢åçš„æ±‰å­—é‡‘é¢
+        var String1 = "é›¶å£¹è´°åè‚†ä¼é™†æŸ’æŒç–"; // æ±‰å­—æ•°å­—
+        var String2 = "ä¸‡ä»Ÿä½°æ‹¾äº¿ä»Ÿä½°æ‹¾ä¸‡ä»Ÿä½°æ‹¾å…ƒè§’åˆ†"; // å¯¹åº”å•ä½
+        var len = numberValue.length; // numberValue çš„å­—ç¬¦ä¸²é•¿åº¦
+        var Ch1; // æ•°å­—çš„æ±‰è¯­è¯»æ³•
+        var Ch2; // æ•°å­—ä½çš„æ±‰å­—è¯»æ³•
+        var nZero = 0; // ç”¨æ¥è®¡ç®—è¿ç»­çš„é›¶å€¼çš„ä¸ªæ•°
+        var String3; // æŒ‡å®šä½ç½®çš„æ•°å€¼
+        if (len > 15) {
+            alert("è¶…å‡ºè®¡ç®—èŒƒå›´");
+            return "";
+        }
+        if (numberValue == 0) {
+            chineseValue = "é›¶å…ƒæ•´";
+            return chineseValue;
+        }
+
+        String2 = String2.substr(String2.length - len, len); // å–å‡ºå¯¹åº”ä½æ•°çš„STRING2çš„å€¼
+        for (var i = 0; i < len; i++) {
+            String3 = parseInt(numberValue.substr(i, 1), 10); // å–å‡ºéœ€è½¬æ¢çš„æŸä¸€ä½çš„å€¼
+            if (i != (len - 3) && i != (len - 7) && i != (len - 11) && i != (len - 15)) {
+                if (String3 == 0) {
+                    Ch1 = "";
+                    Ch2 = "";
+                    nZero = nZero + 1;
+                }
+                else if (String3 != 0 && nZero != 0) {
+                    Ch1 = "é›¶" + String1.substr(String3, 1);
+                    Ch2 = String2.substr(i, 1);
+                    nZero = 0;
+                }
+                else {
+                    Ch1 = String1.substr(String3, 1);
+                    Ch2 = String2.substr(i, 1);
+                    nZero = 0;
+                }
+            }
+            else { // è¯¥ä½æ˜¯ä¸‡äº¿ï¼Œäº¿ï¼Œä¸‡ï¼Œå…ƒä½ç­‰å…³é”®ä½
+                if (String3 != 0 && nZero != 0) {
+                    Ch1 = "é›¶" + String1.substr(String3, 1);
+                    Ch2 = String2.substr(i, 1);
+                    nZero = 0;
+                }
+                else if (String3 != 0 && nZero == 0) {
+                    Ch1 = String1.substr(String3, 1);
+                    Ch2 = String2.substr(i, 1);
+                    nZero = 0;
+                }
+                else if (String3 == 0 && nZero >= 3) {
+                    Ch1 = "";
+                    Ch2 = "";
+                    nZero = nZero + 1;
+                }
+                else {
+                    Ch1 = "";
+                    Ch2 = String2.substr(i, 1);
+                    nZero = nZero + 1;
+                }
+                if (i == (len - 11) || i == (len - 3)) { // å¦‚æœè¯¥ä½æ˜¯äº¿ä½æˆ–å…ƒä½ï¼Œåˆ™å¿…é¡»å†™ä¸Š
+                    Ch2 = String2.substr(i, 1);
+                }
+            }
+            chineseValue = chineseValue + Ch1 + Ch2;
+        }
+
+        if (String3 == 0) { // æœ€åä¸€ä½ï¼ˆåˆ†ï¼‰ä¸º0æ—¶ï¼ŒåŠ ä¸Šâ€œæ•´â€
+            chineseValue = chineseValue + "æ•´";
+        }
+
+        return chineseValue;
+
+    };
 });
